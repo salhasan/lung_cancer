@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    	<title>Add Patient to Clinical Trial</title>
+      <link rel="stylesheet" href="main.css">
+      <style>
+        body{
+          text-align: center;
+        }
+
+        #form-wrapper{
+          margin-left: 25%;
+          margin-right: 25%;
+          background: #F6D29D;
+
+        }
+
+        form{
+          text-align: left;
+          padding-left: 0.5em;
+        }
+
+        input{
+          margin: 0.5em;
+        }
+
+        a {
+          margin: 0.5em; }
+        }
+        a:hover {
+          color: #093a58;
+
+        }
+        #buttons {
+          text-align: center;
+          margin-top: 1em;
+          
+        }
+
+        button {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+       }
+
+
+      </style>
+
+    </head>
+    <body>
+
+      <header>
+      <h1>Lung Cancer Clinical Trials</h1>
+      </header>
+
+      <p>Insert a new patient into an existing clinical trial</p>
+
+      <div id=form-wrapper>
+
+    	<form action="insertpatient.php" method="post">
+    	Patient ID: <input type="text" placeholder="PID_XXX" name="p_ID"/><br>
+    	Age: <input type="text" name="age"/><br>
+    	Sex: <input type="radio" id="m" name="sex" value="m">
+      	<label for="m">Male</label>
+      	<input type="radio" id="f" name="sex" value="f">
+      	<label for="f">Female</label><br>
+    	Race: <input type="text" name="race"/><br>
+    	<label for="start_date">Start Date:</label>
+      	<input type="date" id="start_date" name="start_date"><br>
+    	<label for="CT_ID">Choose a Clinical Trial:</label>
+    	<select name="CT_ID" id="CT_ID">
+      		<option value="CT001">CT001</option>
+      		<option value="CT002">CT002</option>
+      		<option value="CT003">CT003</option>
+      		<option value="CT004">CT004</option>
+      		<option value="CT005">CT005</option>
+      		<option value="CT006">CT006</option>
+      		<option value="CT007">CT007</option>
+      		<option value="CT008">CT008</option>
+      		<option value="CT009">CT009</option>
+      		<option value="CT010">CT010</option>
+    	</select><br>
+
+      <div id=buttons>
+    	<input type="Submit" value= "Insert"/>
+      <input type="Reset"/>
+      </div>
+    	</form>
+
+    </div>
+
+    <a href="index.html"><button>Home Page</button></a>
+
+    </body>
+</html>
