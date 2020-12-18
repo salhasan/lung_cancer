@@ -5,3 +5,4 @@
 - The database contains a list of known carcinogens associated with lung cancer and information about the subject's exposure levels.
 - The database includes data about companies involved in the development of the treatments undergoing clinical trials.
 
+![alt text](https://github.com/salhasan/lung_cancer/blob/main/ER_Diagram.pdf?raw=true)
